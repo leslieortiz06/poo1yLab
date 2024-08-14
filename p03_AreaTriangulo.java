@@ -13,7 +13,7 @@ public class p03_AreaTriangulo {
         System.out.print("\nDame la altura: ");
         altura = obj.nextInt();
 
-        area = base * altura /2;
+        area = (base * altura) /2;
 
         System.out.println( String.format("\nEl trinagulo de base %d y altura %d tiene un area de %.2f",base, altura, area) );
 
