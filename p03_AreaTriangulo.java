@@ -8,14 +8,14 @@ public class p03_AreaTriangulo {
         double area;
         Scanner obj = new Scanner(System.in);
 
-        System.out.println("Dame la base ? ");
+        System.out.print("\nDame la base: ");
         base = obj.nextInt();
-        System.out.println("Dame la altura ? ");
+        System.out.print("\nDame la altura: ");
         altura = obj.nextInt();
 
         area = base * altura /2;
 
-        System.out.println( String.format("El trinagulo de base %d y altura %d tiene un area de %.2f",base, altura, area) );
+        System.out.println( String.format("\nEl trinagulo de base %d y altura %d tiene un area de %.2f",base, altura, area) );
 
     }
 }
