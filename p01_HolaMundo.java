@@ -7,7 +7,7 @@ public class p01_HolaMundo {
         String mensaje = String.format("Tanto %s como %s desean aprender Java",amiga,hermana);
 
         System.out.println("Hola Mundo desde el Lenguaje Java");
-        System.out.println("\nHola amiga " + amiga + " bienvenido a Java");
+        System.out.println("\nHola amiga " + amiga + " bienvenida a Java");
         System.out.println("\nMi amiga es " + amiga + " mi hermana es " + hermana);
         System.out.println("\n" + mensaje);
     }
