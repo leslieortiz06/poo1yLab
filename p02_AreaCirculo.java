@@ -8,11 +8,11 @@ public class p02_AreaCirculo{
         Scanner lradio = new Scanner(System.in);
 
         System.out.println("\nCalculando el area de un circulo\n");
-        System.out.println("Dame el radio");
+        System.out.print("Dame el radio: ");
         radio = lradio.nextFloat();
 
-        //area = Math.PI * Math.pow(radio, 2);
+        area = Math.PI * Math.pow(radio, 2);
 
-        System.out.println("El circulo de radio " + radio + " tiene un area de " + "area");
+        System.out.println("\nEl circulo de radio " + radio + " tiene un area de " + area);
     }
 }
