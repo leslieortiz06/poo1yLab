@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class p07_OperadoresAsignacion {
     public static void main(String[] args) {
-        System.out.print("\033[H\033[2J"); System.out.flush(); // Borrar pantalla de la consola
-        System.out.print("Dame un numero ? ");
+        System.out.print("\033[H\033[2J"); System.out.flush(); // Borra pantalla de la consola
+        System.out.print("Dame un numero: ");
         float num = new Scanner(System.in).nextInt();
         System.out.printf("El numero original es : %.2f \n", num);
         System.out.printf("Incremantar 1 : %.2f \n", ++num);
