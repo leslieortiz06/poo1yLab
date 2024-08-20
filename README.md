@@ -22,7 +22,7 @@
 - p12_ConvertirTemperatura
 - p13_VolumenCilindro
 - p14_CalculoTiempo
-- p15_ConvertirADolares
+- p15_ConvertirADolar
 
 ## Actividad 3
 - p16_TrabajandoEnteros
