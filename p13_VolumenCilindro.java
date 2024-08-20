@@ -9,7 +9,7 @@ public class p13_VolumenCilindro {
        int radio, altura;
        Scanner obj = new Scanner(System.in);
 
-       System.out.print("Dame el radio: ");
+       System.out.print("Dame el radi: ");
        radio = obj.nextInt();
        System.out.print("Dame la altura: ");
        altura = obj.nextInt();
