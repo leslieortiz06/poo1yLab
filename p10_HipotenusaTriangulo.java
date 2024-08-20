@@ -10,7 +10,7 @@ public class p10_HipotenusaTriangulo {
        int longLado1, longLado2;
        Scanner obj = new Scanner(System.in);
 
-       System.out.print("Dame la longitud del lao 1: ");
+       System.out.print("Dame la longitud del lado 1: ");
        longLado1 = obj.nextInt();
        System.out.print("\nDame la longitud del lado 2: ");
        longLado2 = obj.nextInt();

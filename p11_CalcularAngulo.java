@@ -10,7 +10,7 @@ public class p11_CalcularAngulo {
        int angulo1, angulo2;
        Scanner obj = new Scanner(System.in);
 
-       System.out.print("Dame el valor del ánguo 1: ");
+       System.out.print("Dame el valor del ángulo 1: ");
        angulo1 = obj.nextInt();
        System.out.print("\nDame el valor del ángulo 2: ");
        angulo2 = obj.nextInt();

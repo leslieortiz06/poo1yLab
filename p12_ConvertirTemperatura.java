@@ -13,6 +13,6 @@ public class p12_ConvertirTemperatura {
 
        celsius = (fahrenheit-32) * (5.0/9.0);
 
-       System.out.println(String.format("\nLos grado celsius son igual a: "+ celsius));
+       System.out.println(String.format("\nLos grados celsius son igual a: "+ celsius));
     }
 }
