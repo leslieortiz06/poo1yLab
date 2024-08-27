@@ -14,10 +14,10 @@ public class p32_PagaEstacionamiento {
         pago = total = imp = 0;
 
         System.out.println("Elige el tipo de estacionamiento que usaste");
-        System.out.println("Estaconamiento [N]orte  - 3% ");
-        System.out.println("Estaconamiento [S]ur    - 5% ");
-        System.out.println("Estaconamiento [E]ste   - 10% ");
-        System.out.println("Estaconamiento [O]este  - 20% ");
+        System.out.println("Estacionamiento [N]orte  - 3% ");
+        System.out.println("Estacionamiento [S]ur    - 5% ");
+        System.out.println("Estacionamiento [E]ste   - 10% ");
+        System.out.println("Estacionamiento [O]este  - 20% ");
         System.out.print("Elige: ");
         est = Character.toUpperCase(obj.next().charAt(0));
 
