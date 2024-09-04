@@ -13,8 +13,8 @@ public class p45_ImparesDescendente {
             System.out.flush();
 
             n = s = 0;
-            System.out.print("Imprime pares de forma ascendente de 2 hasta 1\n");
-            System.out.print("Hasta donde deseas los pares? ");
+            System.out.print("Imprime impares de forma ascendente de 2 hasta 1\n");
+            System.out.print("Hasta donde deseas los impares? ");
             n = obj.nextInt();
             if (n % 2 == 0)
                 n++;
@@ -27,7 +27,7 @@ public class p45_ImparesDescendente {
                 c -= 2;
 
             }
-            System.out.printf("\n La suma de los pares hasta %d es %d ", n, s);
+            System.out.printf("\nLa suma de los impares hasta %d es %d \n", n, s);
 
             System.out.print("Deseas continuar (S/N)? ");
             resp = Character.toUpperCase(obj.next().charAt(0));
