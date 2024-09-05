@@ -75,3 +75,16 @@
 - p49_ParesDescendente  
 - p50_ConversionTemperaturas
 - p51_SerieFibonaci
+
+## Actividad 9
+- p52_Numeros1aN
+- p53_NumerosNa1
+- p54_ArribaAbajo
+- p55_SumaParesImpares
+- p56_SumaPromedio
+
+## Actvidad 10 
+- p57_TablasMultiplicar
+- p58_Piramide
+- p59_FactorialNumeros
+- p60_SumaTerminos
