@@ -3,25 +3,25 @@ import java.util.Scanner;
 public class p60_SumaTerminos {
     public static void main(String[] args) {
         int i, j, n;
-        float f, r;
+        float f, s;
         char resp;
         Scanner obj = new Scanner(System.in);
         do {
             System.out.print("\033[H\033[2J");
             System.out.flush();
-            r = 0;
+            s = 0;
             System.out.print("Cuantos números ? ");
             n = obj.nextInt();
             for (i = 1; i <= n; i++) {
                 f = 1;
                 for (j = 1; j <= i; j++) {
-                    f *= j;
+                    f = f * j;
 
                 }
-                System.out.printf(" 1 / %,.2f +", f);
-                r += (1 / f);
+                s = s + 1 / f;
+                System.out.printf(" 1 / %,.0f +", f, (i == n ? "" : "+"));
             }
-            System.out.printf("= %,.2f\n", r);
+            System.out.printf(" = %f\n", s);
             System.out.print("\nDeseas continuar (S/N) ?");
             resp = Character.toUpperCase(obj.next().charAt(0));
         } while (resp != 'N');

@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class p59_FactorialNumeros {
     public static void main(String[] args) {
-        int i, j, n, f;
+        int i, j, n;
+        float f;
         char resp;
         Scanner obj = new Scanner(System.in);
         do {
@@ -12,13 +13,14 @@ public class p59_FactorialNumeros {
             n = obj.nextInt();
 
             for (i = 1; i <= n; i++) {
-                System.out.printf("%d!=", i);
                 f = 1;
+                System.out.printf("%d! = ", i);
                 for (j = 1; j <= i; j++) {
                     f = f * j;
+                    System.out.printf("%d %s",j,(i==j ? "" : "* " ) );
                 }
-                System.out.println(f);
-                // i == n ? "" : "+" 
+                System.out.printf("= %.0f ",f);
+                System.out.println();
             }
             System.out.print("\nDeseas continuar (S/N) ?");
             resp = Character.toUpperCase(obj.next().charAt(0));
