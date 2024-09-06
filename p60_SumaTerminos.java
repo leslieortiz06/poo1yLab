@@ -12,14 +12,14 @@ public class p60_SumaTerminos {
             s = 0;
             System.out.print("Cuantos números ? ");
             n = obj.nextInt();
+            
             for (i = 1; i <= n; i++) {
                 f = 1;
                 for (j = 1; j <= i; j++) {
                     f = f * j;
-
                 }
                 s = s + 1 / f;
-                System.out.printf(" 1 / %,.0f +", f, (i == n ? "" : "+"));
+                System.out.printf("1/%.0f %s", f, (i == n ? "" : "+ "));
             }
             System.out.printf(" = %f\n", s);
             System.out.print("\nDeseas continuar (S/N) ?");
