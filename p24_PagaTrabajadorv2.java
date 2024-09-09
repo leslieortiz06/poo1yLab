@@ -1,4 +1,4 @@
-// Calcular la paga de un trabajador, las horas extra se pagan al doble
+// Calcular la paga de un trabajador, las horas extra se pagan al cantDoble
 import java.util.Scanner;
 public class p24_PagaTrabajadorv2 {
     public static void main(String[] args) {
