@@ -8,17 +8,19 @@ public class pe01_PrimerExamenParcial {
     public static void main(String[] args) {
         String nombre;
         int edad, totalDin, alumnosC, docentesC, trabajadoresC, rechazados, aceptados, cobro, mujer, hombre;
-        int alumnos, docentes, trabajadores;
+        int alumnos, docentes, trabajadores, participante, prom;
         char resp, sexo, tipoPar;
         Scanner obj = new Scanner(System.in);
 
         do {
             System.out.print("\033[H\033[2J");
             System.out.flush();
-    
-            totalDin = rechazados = aceptados = cobro = mujer = hombre = 0;
+            
+            totalDin = rechazados = aceptados = cobro = mujer = hombre = participante = prom = 0;
             alumnos = docentes = trabajadores = alumnosC = docentesC = trabajadoresC = 0;
-    
+            
+            participante++;
+            System.out.printf("Participante: %d",participante);
             System.out.print("Dame tu nombre: ");
             nombre = obj.next();
             System.out.print("Dame tu edad  : ");
@@ -59,6 +61,7 @@ public class pe01_PrimerExamenParcial {
                 trabajadores++;
             }
             totalDin = trabajadoresC + docentesC + alumnosC;
+            prom = edad/participante;
 
             System.out.print("\n\nQuieres inscribir a alguien más (S/N)?  ");
             resp = Character.toUpperCase(obj.next().charAt(0));
@@ -71,6 +74,7 @@ public class pe01_PrimerExamenParcial {
         System.out.printf("\nEl total de hombres es de: %d", hombre);
         System.out.printf("\nEl total de mujeres es de: %d", mujer);
         System.out.printf("\nEl total de participantes es de: %d", aceptados);
+        System.out.printf("Promedio de la edad de todos los participantes: %d",prom);
         System.out.printf("\nEl total de rechazados es de: %d", rechazados);
         System.out.println("\n------------------------------------------");
         System.out.printf("\nTotal de dinero recaudado de alumnos: %d", alumnosC);
