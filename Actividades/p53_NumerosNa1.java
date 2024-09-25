@@ -1,6 +1,7 @@
+package Actividades;
 import java.util.Scanner;
 
-public class p52_NumerosNa1 {
+public class p53_NumerosNa1 {
     public static void main(String[] args) {
         int n, p; 
         Scanner obj = new Scanner(System.in);
