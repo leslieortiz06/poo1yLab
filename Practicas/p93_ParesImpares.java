@@ -43,7 +43,8 @@ public class p93_ParesImpares {
     public static void main(String[] args) {
         int[] numsA = new int[100];
         int[] numsB = new int[100];
-
+        
+        System.out.print("\033[H\033[2J");System.out.flush();
         NumerosAleatorios(numsA);
 
         System.out.println("Elementos del arreglo:");
