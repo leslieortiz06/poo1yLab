@@ -9,8 +9,8 @@ public class p91_MayoresPromedio {
 
     public static void Mostrar(float[] x) {
         System.out.println();
+        System.out.print("Calificaciones: ");
         for (int i = 0; i < x.length; i++) {
-            System.out.print("Calificaciones: ");
             System.out.print(x[i] + " ");
         }
     }
@@ -25,10 +25,27 @@ public class p91_MayoresPromedio {
 
     public static float Suma(float[] cals) {
         float suma = 0;
-        for (float cal : cals) {
-            suma += cal;
+        for (int i = 0; i < cals.length; i++) {
+            suma += cals[i];   
         }
         return suma;
+    }
+
+    public static float Promedio(float suma, int n){
+        return suma / n;
+    }
+
+    public static int CalMayoresPromedio(float[] cals, float promedio) {
+        int totalMayores = 0;
+        System.out.println("\nCalificaciones mayores al promedio:");
+        for (int i = 0; i < cals.length; i++) {
+            if (cals[i] > promedio) {
+                System.out.print(cals[i] + " ");
+                totalMayores++;
+            }
+        }
+        System.out.println();
+        return totalMayores;
     }
 
     public static void main(String[] args) {
@@ -41,5 +58,13 @@ public class p91_MayoresPromedio {
 
         guardarCalificaciones(obj, cal, n);
         Mostrar(cal);
+
+        float suma = Suma(cal);
+        float promedio = Promedio(suma, n);
+        System.out.println("\nSuma: " + suma);
+        System.out.println("\nPromedio: " + promedio);
+
+        int totalMayores = CalMayoresPromedio(cal, promedio);
+        System.out.println("\nCantidad de calificaciones mayores al promedio: " + totalMayores);
     }
 }
